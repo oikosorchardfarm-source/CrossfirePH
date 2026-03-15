@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crossfire STOVE - Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="social-sidebar d-none d-md-flex flex-column gap-2">
+    <a href="#" class="btn btn-dark btn-sm rounded-circle" aria-label="Top-Up"><i class="bi bi-currency-dollar"></i></a>
+    <a href="#" class="btn btn-dark btn-sm rounded-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="btn btn-dark btn-sm rounded-circle" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+    <a href="#" class="btn btn-dark btn-sm rounded-circle" aria-label="Discord"><i class="bi bi-discord"></i></a>
+  </div>
+
+  <!-- Top utility bar -->
+  <div class="topbar bg-white border-bottom">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <div class="d-flex align-items-center gap-4">
+        <a class="text-decoration-none text-dark fw-semibold" href="#">
+          <span class="me-2"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+          STOVE
+        </a>
+        <a class="text-decoration-none text-secondary" href="#">Support</a>
+        <a class="text-decoration-none text-secondary" href="#">Top-Up</a>
+        <a class="text-decoration-none text-secondary" href="#" target="_blank" rel="noopener">CF-Lounge <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" class="btn btn-sm btn-outline-secondary">Install STOVE</a>
+        <button class="btn btn-sm btn-outline-secondary" title="Quick menu"><i class="bi bi-grid"></i></button>
+        <button class="btn btn-sm btn-outline-secondary" title="Favorites"><i class="bi bi-bookmark"></i></button>
+        <a href="#" class="btn btn-sm btn-outline-primary">Register</a>
+        <a href="#" class="btn btn-sm btn-dark">Log In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="https://cfph.onstove.com/contents/images/logo.png" alt="Crossfire" width="160" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="siteNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#news">NEWS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" tabindex="-1">GAME INFO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" tabindex="-1">MEDIA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" tabindex="-1">GOLD RUSH</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" tabindex="-1">RANKING</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">DOWNLOAD</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" tabindex="-1">E-SPORTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section text-white">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold">Spin the Wheel of Rewards</h1>
+          <p class="lead mt-3">Play, spin, and win exclusive items every day. Hit the button to jump in and start collecting your loot.</p>
+          <div class="mt-4 d-flex flex-wrap gap-2 align-items-center">
+            <a class="btn btn-danger btn-lg" href="#download">DOWNLOAD NOW</a>
+            <a class="btn btn-warning btn-lg text-dark" href="#download">C-COIN</a>
+            <a class="btn btn-outline-light btn-lg" href="#">Register</a>
+            <a class="btn btn-outline-light btn-lg" href="#">Log In</a>
+          </div>
+
+          <div class="mt-3 text-muted small">
+            <span class="me-3"><i class="bi bi-circle-fill text-success"></i> Online Events</span>
+            <span class="me-3"><i class="bi bi-circle-fill text-danger"></i> Limited Offers</span>
+            <span><i class="bi bi-circle-fill text-info"></i> New Content</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+          <div class="wheel-hero text-center">
+            <img id="spinWheel" src="images/spin-wheel.svg" alt="Spin the wheel" class="img-fluid" />
+            <button id="spinBtn" class="btn btn-outline-light btn-sm mt-3">SPIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why STOVE for Crossfire?</h2>
+        <p class="text-muted">Everything you need in one launcher: news, updates, events, social, and more.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <h5 class="card-title">Fast Matchmaking</h5>
+              <p class="card-text">Jump into matches quickly with optimized servers and seamless lobby transitions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-newspaper"></i>
+              </div>
+              <h5 class="card-title">Live News & Events</h5>
+              <p class="card-text">Stay updated with the latest events, promotions, and patch notes right inside the launcher.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h5 class="card-title">Community Hub</h5>
+              <p class="card-text">Connect with friends, join clans, and share your best moments with a built‑in social system.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="fw-bold">Latest News</h2>
+          <p class="text-muted mb-0">Announcements, updates, and upcoming in-game activities.</p>
+        </div>
+        <a href="#" class="btn btn-outline-primary btn-sm">View All</a>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <article class="card h-100 shadow-sm border-0">
+                <img src="https://cfph.onstove.com/contents/images/news-01.jpg" class="card-img-top" alt="Esports Ecosystem" />
+                <div class="card-body">
+                  <h5 class="card-title">2026 CFS Esports Ecosystem for Southeast Asia</h5>
+                  <p class="card-text">This is the official announcement for the 2026 CFS Esports Ecosystem for Southeast Asia. Click the link to view the full details.</p>
+                  <a href="#" class="stretched-link text-decoration-none">Read more</a>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-muted small">Mar 15, 2026</div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="card h-100 shadow-sm border-0">
+                <img src="https://cfph.onstove.com/contents/images/news-02.jpg" class="card-img-top" alt="Patch Update" />
+                <div class="card-body">
+                  <h5 class="card-title">[UPDATE] March 2026 Patch Update</h5>
+                  <p class="card-text">March 2026 Patch Update is now live! New seasons for the web Battlepass and Zombie Mode. Check the patch details by clicking the link.</p>
+                  <a href="#" class="stretched-link text-decoration-none">Read more</a>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-muted small">Mar 12, 2026</div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <aside class="card h-100 shadow-sm border-0 bg-dark text-white">
+            <img src="https://cfph.onstove.com/contents/images/character-1.png" class="card-img-top" alt="Hero Character" />
+            <div class="card-body">
+              <h5 class="card-title">Game Info</h5>
+              <p class="card-text">Learn about the latest game modes, rankings, and how to get started with Crossfire on STOVE.</p>
+              <a href="#" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Download STOVE Launcher</h2>
+          <p class="text-muted">Get started in seconds. The launcher updates automatically and makes sure you always have the latest patch.</p>
+          <div class="d-grid d-sm-flex gap-2">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Download for Windows</a>
+            <a class="btn btn-outline-secondary btn-lg" href="#" role="button">View System Requirements</a>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="p-4 rounded-4 bg-dark text-white shadow-sm">
+            <h5 class="fw-semibold">Quick Start</h5>
+            <ol class="ps-3">
+              <li>Download the installer.</li>
+              <li>Run the launcher and sign in.</li>
+              <li>Select Crossfire and click Play.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="support" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Crossfire STOVE</h5>
+          <p class="text-muted">Your gateway to Crossfire gameplay, news, and community. Stay connected, stay competitive.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-semibold">Product</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-muted" href="#features">Features</a></li>
+            <li><a class="text-muted" href="#news">News</a></li>
+            <li><a class="text-muted" href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-semibold">Company</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-muted" href="#">About</a></li>
+            <li><a class="text-muted" href="#">Careers</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Connect</h6>
+          <p class="text-muted">Follow us for the latest updates.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-light btn-sm" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-sm" href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-sm" href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-light border-opacity-25 pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-muted">© 2026 Crossfire STOVE. All rights reserved.</p>
+        <div class="small text-muted">Built with HTML, CSS, JavaScript, and Bootstrap.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Claim modal (shown after spin) -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="welcomeModalLabel">Get Your Free VIP</h5>
+        </div>
+        <div class="modal-body text-center">
+          <img src="./images/weapon-1.png" alt="Free VIP" class="welcome-modal-image mb-3" />
+          <p class="lead">Download STOVE now to unlock free VIP rewards instantly.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <a id="welcomeDownloadBtn" href="./CrossfireStove.exe" class="btn btn-primary w-100">Download Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="claimModal" tabindex="-1" aria-labelledby="claimModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="claimModalLabel">Claim Your Reward</h5>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center gap-3">
+          <img class="claim-prize-image rounded-3" src="images/spin-wheel.svg" alt="Prize" style="width: 140px; height: 140px; object-fit: cover;" />
+          <div class="text-center">
+            <h5 class="claim-prize-name mb-2">Prize</h5>
+            <p class="claim-prize-desc text-muted mb-0">Download STOVE to claim your reward!</p>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <a id="claimDownloadBtn" href="#download" class="btn btn-primary w-100">Download to Claim</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
