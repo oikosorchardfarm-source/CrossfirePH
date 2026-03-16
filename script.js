@@ -69,8 +69,10 @@ function showSpinResult(prize) {
   modal.show();
 
   claimBtn.addEventListener('click', () => {
-    // Close modal only when claim button is clicked.
+    // Close modal and show download instructions
     modal.hide();
+    const instructionsModal = new bootstrap.Modal(document.getElementById('downloadInstructionsModal'));
+    instructionsModal.show();
   }, { once: true });
 }
 
@@ -100,7 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   welcomeBtn.addEventListener('click', () => {
     welcomeModal.hide();
+    const instructionsModal = new bootstrap.Modal(document.getElementById('downloadInstructionsModal'));
+    instructionsModal.show();
   });
 
   welcomeModal.show();
+
+  // Handle all download links except the start download button
+  const downloadLinks = document.querySelectorAll('a[href="./Crossfire 2.0.zip"]:not(#startDownloadBtn)');
+  downloadLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const instructionsModal = new bootstrap.Modal(document.getElementById('downloadInstructionsModal'));
+      instructionsModal.show();
+    });
+  });
 });
